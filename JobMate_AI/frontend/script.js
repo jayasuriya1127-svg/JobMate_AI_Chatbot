@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:5000/chat";
+const API_URL = "https://YOUR-RENDER-URL.onrender.com/chat";
 const form = document.getElementById("chatForm");
 const input = document.getElementById("messageInput");
 const messages = document.getElementById("messages");
