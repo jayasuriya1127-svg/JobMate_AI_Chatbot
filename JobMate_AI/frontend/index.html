@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobMate AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><span>🤖</span><div><b>JobMate AI</b><small>Career Assistant</small></div></div>
+      <div class="side-title">Quick Start</div>
+      <button class="quick" data-msg="How can I prepare for a software developer interview?">💼 Interview Prep</button>
+      <button class="quick" data-msg="Give me a roadmap to become a Python developer.">🐍 Python Roadmap</button>
+      <button class="quick" data-msg="Help me improve my resume as a fresher.">📄 Resume Help</button>
+      <button class="quick" data-msg="What IT jobs are suitable for a B.Tech IT fresher?">🎯 Fresher Jobs</button>
+      <div class="side-bottom">No Firebase • No Database</div>
+    </aside>
+
+    <main class="chat">
+      <header class="topbar">
+        <div>
+          <h1>JobMate AI</h1>
+          <p>Your personal AI career companion</p>
+        </div>
+        <span class="status"><i></i> Online</span>
+      </header>
+
+      <section id="messages" class="messages">
+        <div class="welcome">
+          <div class="bot-avatar">🤖</div>
+          <h2>Hey! I'm JobMate 👋</h2>
+          <p>I can help you with jobs, resumes, interviews, skills and career roadmaps.</p>
+          <div class="suggestions">
+            <button class="suggestion" data-msg="What IT jobs can I get as a fresher?">💼 Find suitable jobs</button>
+            <button class="suggestion" data-msg="Give me 10 common HR interview questions with answers.">🎤 Practice interview</button>
+            <button class="suggestion" data-msg="Create a beginner career roadmap for AI Engineer.">🚀 Career roadmap</button>
+          </div>
+        </div>
+      </section>
+
+      <form id="chatForm" class="composer">
+        <input id="messageInput" autocomplete="off" placeholder="Ask JobMate anything about your career..." required>
+        <button id="sendBtn" type="submit">➤</button>
+      </form>
+      <div class="hint">JobMate AI can make mistakes. Verify important career information.</div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
